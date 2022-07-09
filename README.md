@@ -1,7 +1,7 @@
 # GravitationSimulation
  A program that simulates planetary gravity
 # Screenshot
-![Screenshot](https://raw.githubusercontent.com/BuhankaTom/GravitationSimulation/main/Images/1.png)
+![Screenshot](https://raw.githubusercontent.com/BuhankaTom/GravitationSimulation/main/Images/1.gif)
 # Hotkeys
 - Delete - deletes selected planets
 - Z - Makes selected planet as center of space
