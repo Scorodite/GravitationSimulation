@@ -311,7 +311,7 @@ namespace GravitationSimulation
                             if (item.Tag is Planet planet)
                             {
                                 planet.Static = !planet.Static;
-                                item.SubItems[4].Text = planet.Static ? "Yes" : "No";
+                                item.SubItems[5].Text = planet.Static ? "Yes" : "No";
                             }
                         }
                     }
