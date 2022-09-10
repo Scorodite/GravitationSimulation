@@ -62,6 +62,7 @@ namespace GravitationSimulation
             PlanetAnimationBox.SelectedIndex = 0;
 
             MainSplitContainer.Cursor = Cursors.Default;
+            UpdateTimer.Start();
         }
 
         /// <summary>

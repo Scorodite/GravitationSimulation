@@ -78,7 +78,6 @@
             // 
             // UpdateTimer
             // 
-            this.UpdateTimer.Enabled = true;
             this.UpdateTimer.Interval = 16;
             this.UpdateTimer.Tick += new System.EventHandler(this.UpdateTimer_Tick);
             // 
@@ -86,8 +85,9 @@
             // 
             this.SpaceBitmapBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SpaceBitmapBox.Location = new System.Drawing.Point(0, 0);
+            this.SpaceBitmapBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SpaceBitmapBox.Name = "SpaceBitmapBox";
-            this.SpaceBitmapBox.Size = new System.Drawing.Size(919, 758);
+            this.SpaceBitmapBox.Size = new System.Drawing.Size(1051, 1011);
             this.SpaceBitmapBox.TabIndex = 0;
             this.SpaceBitmapBox.TabStop = false;
             this.SpaceBitmapBox.SizeChanged += new System.EventHandler(this.SpaceBitmapBox_SizeChanged);
@@ -103,8 +103,9 @@
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(299, 758);
+            this.panel1.Size = new System.Drawing.Size(341, 1011);
             this.panel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -121,15 +122,16 @@
             this.tableLayoutPanel2.Controls.Add(this.PlanetList, 0, 5);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(299, 758);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(341, 1011);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // groupBox1
@@ -137,9 +139,11 @@
             this.tableLayoutPanel2.SetColumnSpan(this.groupBox1, 3);
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 152);
+            this.groupBox1.Location = new System.Drawing.Point(3, 202);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(293, 324);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(335, 432);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Create planet";
@@ -161,7 +165,8 @@
             this.tableLayoutPanel1.Controls.Add(this.PlanetSpeedBox, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.PlanetAnimationPreviewBox, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 19);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 24);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -170,7 +175,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(287, 302);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(329, 404);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // PlanetAnimationBox
@@ -178,18 +183,20 @@
             this.PlanetAnimationBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PlanetAnimationBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PlanetAnimationBox.FormattingEnabled = true;
-            this.PlanetAnimationBox.Location = new System.Drawing.Point(72, 169);
+            this.PlanetAnimationBox.Location = new System.Drawing.Point(87, 242);
+            this.PlanetAnimationBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlanetAnimationBox.Name = "PlanetAnimationBox";
-            this.PlanetAnimationBox.Size = new System.Drawing.Size(212, 23);
+            this.PlanetAnimationBox.Size = new System.Drawing.Size(239, 28);
             this.PlanetAnimationBox.TabIndex = 0;
             this.PlanetAnimationBox.SelectedIndexChanged += new System.EventHandler(this.PlanetAnimationBox_SelectedIndexChanged);
             // 
             // PlanetStaticBox
             // 
             this.PlanetStaticBox.AutoSize = true;
-            this.PlanetStaticBox.Location = new System.Drawing.Point(72, 198);
+            this.PlanetStaticBox.Location = new System.Drawing.Point(87, 278);
+            this.PlanetStaticBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlanetStaticBox.Name = "PlanetStaticBox";
-            this.PlanetStaticBox.Size = new System.Drawing.Size(15, 14);
+            this.PlanetStaticBox.Size = new System.Drawing.Size(18, 17);
             this.PlanetStaticBox.TabIndex = 1;
             this.PlanetStaticBox.UseVisualStyleBackColor = true;
             // 
@@ -197,7 +204,8 @@
             // 
             this.PlanetMassBox.DecimalPlaces = 2;
             this.PlanetMassBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PlanetMassBox.Location = new System.Drawing.Point(72, 218);
+            this.PlanetMassBox.Location = new System.Drawing.Point(87, 303);
+            this.PlanetMassBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlanetMassBox.Maximum = new decimal(new int[] {
             10000000,
             0,
@@ -209,30 +217,31 @@
             0,
             -2147483648});
             this.PlanetMassBox.Name = "PlanetMassBox";
-            this.PlanetMassBox.Size = new System.Drawing.Size(212, 23);
+            this.PlanetMassBox.Size = new System.Drawing.Size(239, 27);
             this.PlanetMassBox.TabIndex = 2;
             // 
             // PlanetAngleBox
             // 
             this.PlanetAngleBox.DecimalPlaces = 4;
             this.PlanetAngleBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PlanetAngleBox.Location = new System.Drawing.Point(72, 247);
+            this.PlanetAngleBox.Location = new System.Drawing.Point(87, 338);
+            this.PlanetAngleBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlanetAngleBox.Maximum = new decimal(new int[] {
             2,
             0,
             0,
             0});
             this.PlanetAngleBox.Name = "PlanetAngleBox";
-            this.PlanetAngleBox.Size = new System.Drawing.Size(212, 23);
+            this.PlanetAngleBox.Size = new System.Drawing.Size(239, 27);
             this.PlanetAngleBox.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 166);
+            this.label1.Location = new System.Drawing.Point(3, 238);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 29);
+            this.label1.Size = new System.Drawing.Size(78, 36);
             this.label1.TabIndex = 4;
             this.label1.Text = "Animation";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -241,9 +250,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 195);
+            this.label2.Location = new System.Drawing.Point(3, 274);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 20);
+            this.label2.Size = new System.Drawing.Size(78, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Static";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -252,9 +261,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 215);
+            this.label3.Location = new System.Drawing.Point(3, 299);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 29);
+            this.label3.Size = new System.Drawing.Size(78, 35);
             this.label3.TabIndex = 6;
             this.label3.Text = "Mass";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -263,9 +272,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 244);
+            this.label4.Location = new System.Drawing.Point(3, 334);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 29);
+            this.label4.Size = new System.Drawing.Size(78, 35);
             this.label4.TabIndex = 7;
             this.label4.Text = "Angle";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -274,9 +283,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 273);
+            this.label5.Location = new System.Drawing.Point(3, 369);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 29);
+            this.label5.Size = new System.Drawing.Size(78, 35);
             this.label5.TabIndex = 8;
             this.label5.Text = "Speed";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -285,14 +294,15 @@
             // 
             this.PlanetSpeedBox.DecimalPlaces = 2;
             this.PlanetSpeedBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PlanetSpeedBox.Location = new System.Drawing.Point(72, 276);
+            this.PlanetSpeedBox.Location = new System.Drawing.Point(87, 373);
+            this.PlanetSpeedBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlanetSpeedBox.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.PlanetSpeedBox.Name = "PlanetSpeedBox";
-            this.PlanetSpeedBox.Size = new System.Drawing.Size(212, 23);
+            this.PlanetSpeedBox.Size = new System.Drawing.Size(239, 27);
             this.PlanetSpeedBox.TabIndex = 9;
             // 
             // PlanetAnimationPreviewBox
@@ -300,9 +310,10 @@
             this.PlanetAnimationPreviewBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tableLayoutPanel1.SetColumnSpan(this.PlanetAnimationPreviewBox, 2);
             this.PlanetAnimationPreviewBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PlanetAnimationPreviewBox.Location = new System.Drawing.Point(3, 3);
+            this.PlanetAnimationPreviewBox.Location = new System.Drawing.Point(3, 4);
+            this.PlanetAnimationPreviewBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlanetAnimationPreviewBox.Name = "PlanetAnimationPreviewBox";
-            this.PlanetAnimationPreviewBox.Size = new System.Drawing.Size(281, 160);
+            this.PlanetAnimationPreviewBox.Size = new System.Drawing.Size(323, 230);
             this.PlanetAnimationPreviewBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PlanetAnimationPreviewBox.TabIndex = 10;
             this.PlanetAnimationPreviewBox.TabStop = false;
@@ -310,9 +321,10 @@
             // PauseButton
             // 
             this.PauseButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PauseButton.Location = new System.Drawing.Point(3, 23);
+            this.PauseButton.Location = new System.Drawing.Point(3, 31);
+            this.PauseButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PauseButton.Name = "PauseButton";
-            this.PauseButton.Size = new System.Drawing.Size(69, 23);
+            this.PauseButton.Size = new System.Drawing.Size(79, 31);
             this.PauseButton.TabIndex = 3;
             this.PauseButton.Text = "Pause";
             this.PauseButton.UseVisualStyleBackColor = true;
@@ -321,9 +333,10 @@
             // ClearButton
             // 
             this.ClearButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ClearButton.Location = new System.Drawing.Point(221, 23);
+            this.ClearButton.Location = new System.Drawing.Point(252, 31);
+            this.ClearButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(75, 23);
+            this.ClearButton.Size = new System.Drawing.Size(86, 31);
             this.ClearButton.TabIndex = 5;
             this.ClearButton.Text = "Clear space";
             this.ClearButton.UseVisualStyleBackColor = true;
@@ -335,9 +348,11 @@
             this.groupBox2.Controls.Add(this.CreatePlanetRadio);
             this.groupBox2.Controls.Add(this.MoveCameraRadio);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(3, 77);
+            this.groupBox2.Location = new System.Drawing.Point(3, 102);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(293, 69);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(335, 92);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Mouse";
@@ -345,9 +360,10 @@
             // CreatePlanetRadio
             // 
             this.CreatePlanetRadio.AutoSize = true;
-            this.CreatePlanetRadio.Location = new System.Drawing.Point(6, 44);
+            this.CreatePlanetRadio.Location = new System.Drawing.Point(7, 59);
+            this.CreatePlanetRadio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CreatePlanetRadio.Name = "CreatePlanetRadio";
-            this.CreatePlanetRadio.Size = new System.Drawing.Size(95, 19);
+            this.CreatePlanetRadio.Size = new System.Drawing.Size(119, 24);
             this.CreatePlanetRadio.TabIndex = 1;
             this.CreatePlanetRadio.Text = "Create planet";
             this.CreatePlanetRadio.UseVisualStyleBackColor = true;
@@ -356,9 +372,10 @@
             // 
             this.MoveCameraRadio.AutoSize = true;
             this.MoveCameraRadio.Checked = true;
-            this.MoveCameraRadio.Location = new System.Drawing.Point(6, 22);
+            this.MoveCameraRadio.Location = new System.Drawing.Point(7, 29);
+            this.MoveCameraRadio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MoveCameraRadio.Name = "MoveCameraRadio";
-            this.MoveCameraRadio.Size = new System.Drawing.Size(97, 19);
+            this.MoveCameraRadio.Size = new System.Drawing.Size(120, 24);
             this.MoveCameraRadio.TabIndex = 0;
             this.MoveCameraRadio.TabStop = true;
             this.MoveCameraRadio.Text = "Move camera";
@@ -368,9 +385,10 @@
             // 
             this.AccelerationVectorsBox.AutoSize = true;
             this.tableLayoutPanel2.SetColumnSpan(this.AccelerationVectorsBox, 3);
-            this.AccelerationVectorsBox.Location = new System.Drawing.Point(3, 52);
+            this.AccelerationVectorsBox.Location = new System.Drawing.Point(3, 70);
+            this.AccelerationVectorsBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AccelerationVectorsBox.Name = "AccelerationVectorsBox";
-            this.AccelerationVectorsBox.Size = new System.Drawing.Size(130, 19);
+            this.AccelerationVectorsBox.Size = new System.Drawing.Size(162, 24);
             this.AccelerationVectorsBox.TabIndex = 7;
             this.AccelerationVectorsBox.Text = "Show speed vectors";
             this.AccelerationVectorsBox.UseVisualStyleBackColor = true;
@@ -388,9 +406,10 @@
             this.PlanetList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PlanetList.FullRowSelect = true;
             this.PlanetList.HideSelection = false;
-            this.PlanetList.Location = new System.Drawing.Point(3, 482);
+            this.PlanetList.Location = new System.Drawing.Point(3, 642);
+            this.PlanetList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlanetList.Name = "PlanetList";
-            this.PlanetList.Size = new System.Drawing.Size(293, 273);
+            this.PlanetList.Size = new System.Drawing.Size(335, 365);
             this.PlanetList.TabIndex = 8;
             this.PlanetList.UseCompatibleStateImageBehavior = false;
             this.PlanetList.View = System.Windows.Forms.View.Details;
@@ -429,6 +448,7 @@
             this.MainSplitContainer.Cursor = System.Windows.Forms.Cursors.VSplit;
             this.MainSplitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainSplitContainer.Location = new System.Drawing.Point(0, 0);
+            this.MainSplitContainer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MainSplitContainer.Name = "MainSplitContainer";
             // 
             // MainSplitContainer.Panel1
@@ -438,17 +458,19 @@
             // MainSplitContainer.Panel2
             // 
             this.MainSplitContainer.Panel2.Controls.Add(this.SpaceBitmapBox);
-            this.MainSplitContainer.Size = new System.Drawing.Size(1222, 758);
-            this.MainSplitContainer.SplitterDistance = 299;
+            this.MainSplitContainer.Size = new System.Drawing.Size(1397, 1011);
+            this.MainSplitContainer.SplitterDistance = 341;
+            this.MainSplitContainer.SplitterWidth = 5;
             this.MainSplitContainer.TabIndex = 2;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1222, 758);
+            this.ClientSize = new System.Drawing.Size(1397, 1011);
             this.Controls.Add(this.MainSplitContainer);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
             this.Text = "Gravitation simulation";
             ((System.ComponentModel.ISupportInitialize)(this.SpaceBitmapBox)).EndInit();
